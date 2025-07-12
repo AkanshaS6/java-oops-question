@@ -1,0 +1,15 @@
+#Write a program that prints Hello, World! to the console.Declare and initialize variables for your name, age, and favorite programming language. Print them in a formatted sentence.
+public class HelloWorld {
+    public static void main(String[] args) {
+      
+        System.out.println("Hello, World!");
+
+        
+        String name = "Akansha";
+        int age = 20;
+        String favoriteLanguage = "Java";
+
+        
+        System.out.println("My name is " + name + ", I am " + age + " years old, and my favorite programming language is " + favoriteLanguage + ".");
+    }
+}
