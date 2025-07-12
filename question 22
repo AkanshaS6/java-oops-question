@@ -1,0 +1,29 @@
+#Declare one variable of each primitive type (int, float, double, char, boolean). Assign values and print them.\Convert a float to an integer and print both values. Then convert an integer to a double and print both.
+
+public class PrimitiveTypesDemo {
+    public static void main(String[] args) {
+        
+        int myInt = 100;
+        float myFloat = 45.67f;
+        double myDouble = 123.456789;
+        char myChar = 'A';
+        boolean myBoolean = true;
+
+        
+        System.out.println("Integer: " + myInt);
+        System.out.println("Float: " + myFloat);
+        System.out.println("Double: " + myDouble);
+        System.out.println("Character: " + myChar);
+        System.out.println("Boolean: " + myBoolean);
+
+        
+        int floatToInt = (int) myFloat;
+        System.out.println("\nFloat value: " + myFloat);
+        System.out.println("Converted to Integer: " + floatToInt);
+
+        
+        double intToDouble = (double) myInt;
+        System.out.println("\nInteger value: " + myInt);
+        System.out.println("Converted to Double: " + intToDouble);
+    }
+}
