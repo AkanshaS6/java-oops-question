@@ -1,0 +1,26 @@
+#Take a string input and print its: Length, First and last characters and it's Uppercase version
+Take two strings and concatenate them with a space in between using + and concat().
+
+import java.util.Scanner;
+
+public class StringDetails {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+        System.out.println("Length: " + str.length());
+        System.out.println("First character: " + str.charAt(0));
+        System.out.println("Last character: " + str.charAt(str.length() - 1));
+        System.out.println("Uppercase: " + str.toUpperCase());
+
+        String str1 = sc.nextLine();
+        String str2 = sc.nextLine();
+
+        String result1 = str1 + " " + str2;
+        String result2 = str1.concat(" ").concat(str2);
+
+        System.out.println("Using + : " + result1);
+        System.out.println("Using concat(): " + result2);
+    }
+}
