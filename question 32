@@ -1,0 +1,66 @@
+//Create an abstract class Shape with an abstract method area(). Derive Circle and Rectangle classes and implement area() for each.
+//Create an interface Playable with a method play(). Implement it in a Guitar and Drum class and call play() on both.
+
+// Part 1: Abstract class Shape
+abstract class Shape {
+    abstract double area();
+}
+
+class Circle extends Shape {
+    double radius;
+
+    Circle(double radius) {
+        this.radius = radius;
+    }
+
+    double area() {
+        return Math.PI * radius * radius;
+    }
+}
+
+class Rectangle extends Shape {
+    double length, width;
+
+    Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    double area() {
+        return length * width;
+    }
+}
+
+// Part 2: Interface Playable
+interface Playable {
+    void play();
+}
+
+class Guitar implements Playable {
+    public void play() {
+        System.out.println("Playing the guitar...");
+    }
+}
+
+class Drum implements Playable {
+    public void play() {
+        System.out.println("Playing the drum...");
+    }
+}
+
+// Main method to test both parts
+public class Main {
+    public static void main(String[] args) {
+        Shape circle = new Circle(5);
+        Shape rectangle = new Rectangle(4, 6);
+
+        System.out.println("Circle Area: " + circle.area());
+        System.out.println("Rectangle Area: " + rectangle.area());
+
+        Playable guitar = new Guitar();
+        Playable drum = new Drum();
+
+        guitar.play();
+        drum.play();
+    }
+}
