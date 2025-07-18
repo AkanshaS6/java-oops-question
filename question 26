@@ -1,0 +1,20 @@
+#Replace all spaces in a string with hyphens (-) and print the result.
+Split a sentence into words using .split(" ") and print each word on a new line.
+
+import java.util.Scanner;
+
+public class StringReplaceSplit {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String sentence = sc.nextLine();
+
+        String replaced = sentence.replace(" ", "-");
+        System.out.println("With hyphens: " + replaced);
+
+        String[] words = sentence.split(" ");
+        for (String word : words) {
+            System.out.println(word);
+        }
+    }
+}
