@@ -1,0 +1,27 @@
+#Overload a method multiply() that multiplies two integers or two doubles.Create an overloaded greet() method — one with no arguments and one with a name argument. in java without comments
+
+public class MethodOverloading {
+
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    public static void greet() {
+        System.out.println("Hello!");
+    }
+
+    public static void greet(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+
+    public static void main(String[] args) {
+        System.out.println(multiply(4, 5));
+        System.out.println(multiply(2.5, 3.2));
+        greet();
+        greet("Akansha");
+    }
+}
