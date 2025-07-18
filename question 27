@@ -1,0 +1,24 @@
+#Create a method countWords(String sentence) that returns the number of words.
+Create a method reverseString(String s) that returns the reversed version of the string.
+
+public class StringMethods {
+
+    public static int countWords(String sentence) {
+        String[] words = sentence.trim().split("\\s+");
+        return words.length;
+    }
+
+    public static String reverseString(String s) {
+        String reversed = "";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            reversed += s.charAt(i);
+        }
+        return reversed;
+    }
+
+    public static void main(String[] args) {
+        String text = "Hello world this is Java";
+        System.out.println("Word count: " + countWords(text));
+        System.out.println("Reversed: " + reverseString(text));
+    }
+}
